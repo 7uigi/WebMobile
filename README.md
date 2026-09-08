@@ -71,3 +71,78 @@ Já o Footer são contatos de ajuda para situações de emergência (Polícia, A
 
 
 
+# Tutorial CSS
+O site esta separado em 4 partes sendo elas:
+
+## Header
+O header do site engloba o logo e a funcionalidade de alterar o tamanho da fonte do site visando uma maior acessibilidade para o publico alvo
+
+ `
+    header{
+        color: black;
+        font-size: larger;
+        margin: 0;
+        padding: 0;
+        background-color: whitesmoke;
+         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+       
+  `;
+
+  
+## Section 1
+O Section 1 é referente a introdução do site e uma foto
+
+ `
+    .introduction{
+        color: black;
+        font-size: larger;
+        margin: 0;
+        padding: 0;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+ `;
+ 
+## Section 2
+O Section 2 é referente a 6 ajudas diferentes para o publico alvo usufruir do ambiente digital
+
+ `
+    .specificContent{
+        color: black;
+        font-size: larger;
+        margin: 0;
+        padding: 0;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+ `;
+ 
+## Footer
+Já o Footer são contatos de ajuda para situações de emergência (Polícia, Ambulância e Bombeiros)
+
+ `
+    footer{
+        color: black;
+        font-size: larger;
+        margin: 0;
+        padding: 0;
+        background-color: limegreen;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+  `;
+
+
+
