@@ -1,0 +1,129 @@
+header{
+    color: black;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header div{
+    color: black;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+header div img{
+    object-fit: cover;
+    width: 300px;
+    height: 40px;
+}
+
+header h1{
+    color: black;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+header button{
+    font-size: larger;
+    padding: 20;
+    background-color: white;
+    
+}
+header p{
+    color: black;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.introduction{
+    color: black;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.introduction img{
+    object-fit: cover;
+    width: 300px;
+    height: 80px;
+}
+
+.introduction div{
+    color: black;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.specificContent{
+    color: black;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.specificContent a{
+    color: black;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.specificContent a img{
+    object-fit: cover;
+    width: 450px;
+    height: 300px;
+}
+
+footer{
+    color: black;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    background-color: limegreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer section{
+    color: black;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    background-color: limegreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+footer section img{
+    object-fit: cover;
+    width: 300px;
+    height: 40px;
+}
