@@ -24,7 +24,7 @@ O site esta separado em 4 partes sendo elas:
 O header do site engloba o logo e a funcionalidade de alterar o tamanho da fonte do site visando uma maior acessibilidade para o publico alvo
 
  `
-       <header>
+        <header>
             <img src="https://github.com/7uigi/WebMobile/blob/feature/HTML/Fotos%20web/WhatsApp%20Image%202026-08-25%20at%2020.34.00.jpeg"alt="Logo">
             <h1> Projeto terceira idade </h1>
             <p> Font</p>
@@ -144,5 +144,46 @@ Já o Footer são contatos de ajuda para situações de emergência (Polícia, A
 
   `;
 
+![Site com CSS](https://github.com/7uigi/WebMobile/blob/main/siteCSS.png)
 
+# Tutorial Js
+A funcionalidade do java script adicionada foi a funcionalidade de fontes alteraveis para tornar responsivel o tamanho dos textos para uma maior visibilidade e acessibilidade.
+
+## Funcionalidade tamanho das fontes
+uma função para aumentar o tamanho da fonte e outra para diminuir.
+
+  `
+    let tamanhoFonte = 32;
+
+    const botaoAumentar = document.getElementById("aumentar");
+    const botaoDiminuir = document.getElementById("diminuir");
+    const textos = document.querySelectorAll(".texto");
+
+    function aumentarFonte() {
+        if (tamanhoFonte < 60) {
+            tamanhoFonte += 2;
+
+            const textos = document.querySelectorAll(".texto");
+
+            textos.forEach(function(texto) {
+                texto.style.fontSize = tamanhoFonte + "px";
+            });
+        }
+    }
+
+    function diminuirFonte() {
+        if (tamanhoFonte > 20) {
+            tamanhoFonte -= 2;
+
+            const textos = document.querySelectorAll(".texto");
+
+            textos.forEach(function(texto) {
+                texto.style.fontSize = tamanhoFonte + "px";
+            });
+        }
+    }
+
+  `;
+
+![site com js](https://github.com/7uigi/WebMobile/blob/main/siteJS.png)
 
