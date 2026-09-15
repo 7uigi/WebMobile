@@ -2,8 +2,8 @@ header{
     color: black;
     font-size: larger;
     margin: 0;
-    padding: 0;
-    background-color: whitesmoke;
+    padding-bottom: 60px;
+    background-color: lightblue;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -11,9 +11,9 @@ header{
 header div{
     color: black;
     font-size: larger;
-    margin: 0;
-    padding: 0;
-    background-color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -21,36 +21,34 @@ header div{
 
 header div img{
     object-fit: cover;
-    width: 300px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
 }
-
-header h1{
+header div h1{
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 60px;
+}
+header div p{
     color: black;
     font-size: larger;
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    width: 100px;
+    display: flex;
+    justify-content: center;
 }
-header button{
-    font-size: larger;
-    padding: 20;
+header div button{
+    font-size: 32px;
     background-color: white;
-    
-}
-header p{
-    color: black;
-    font-size: larger;
-    margin: 0;
-    padding: 0;
-    background-color: whitesmoke;
 }
 
 .introduction{
     color: black;
-    font-size: larger;
-    margin: 0;
-    padding: 0;
+    font-size: 32px;
+    margin: 0px;
+    padding: 100px;
     background-color: whitesmoke;
     display: flex;
     flex-direction: row;
@@ -58,26 +56,28 @@ header p{
 }
 .introduction img{
     object-fit: cover;
-    width: 300px;
-    height: 80px;
+    width: 400px;
+    height: 300px;
 }
 
 .introduction div{
     color: black;
-    font-size: larger;
-    margin: 0;
-    padding: 0;
+    font-size: 32px;
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
 }
 
 .specificContent{
     color: black;
-    font-size: larger;
-    margin: 0;
-    padding: 0;
+    font-size: 32px;
+    margin: 0px;
+    padding: 0px;
     background-color: whitesmoke;
     display: flex;
     flex-direction: row;
@@ -87,10 +87,10 @@ header p{
 }
 .specificContent a{
     color: black;
-    font-size: larger;
-    margin: 0;
-    padding: 0;
-    background-color: whitesmoke;
+    text-decoration: none;
+    font-size: 32px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -100,12 +100,17 @@ header p{
     width: 450px;
     height: 300px;
 }
+.specificContent a p{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+}
 
 footer{
     color: black;
-    font-size: larger;
-    margin: 0;
-    padding: 0;
+    font-size: 32px;
+    margin: 0px;
+    padding: 0px;
     background-color: limegreen;
     display: flex;
     flex-direction: row;
@@ -114,10 +119,9 @@ footer{
 
 footer section{
     color: black;
-    font-size: larger;
-    margin: 0;
-    padding: 0;
-    background-color: limegreen;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-size: 32px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -125,5 +129,15 @@ footer section{
 footer section img{
     object-fit: cover;
     width: 300px;
-    height: 40px;
+    height: 150px;
+}
+footer section h2{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+footer section p{
+    width: 300px;
+    display: flex;
+    justify-content: center;
 }
