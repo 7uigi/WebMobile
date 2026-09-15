@@ -87,8 +87,7 @@ O header do site engloba o logo e a funcionalidade de alterar o tamanho da fonte
          display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
-       
+    }     
   `;
 
   
@@ -106,7 +105,6 @@ O Section 1 é referente a introdução do site e uma foto
         flex-direction: row;
         justify-content: space-around;
     }
-
  `;
  
 ## Section 2
@@ -123,8 +121,7 @@ O Section 2 é referente a 6 ajudas diferentes para o publico alvo usufruir do a
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
-    }
-    
+    }   
  `;
  
 ## Footer
@@ -141,10 +138,11 @@ Já o Footer são contatos de ajuda para situações de emergência (Polícia, A
         flex-direction: row;
         justify-content: space-around;
     }
+`;
 
-  `;
+## site com interface do CSS
 
-![Site com CSS](https://github.com/7uigi/WebMobile/blob/main/siteCSS.png)
+![site com CSS](https://github.com/7uigi/WebMobile/blob/main/Fotos%20web/siteCSS.png)
 
 # Tutorial Js
 A funcionalidade do java script adicionada foi a funcionalidade de fontes alteraveis para tornar responsivel o tamanho dos textos para uma maior visibilidade e acessibilidade.
@@ -153,6 +151,7 @@ A funcionalidade do java script adicionada foi a funcionalidade de fontes altera
 uma função para aumentar o tamanho da fonte e outra para diminuir.
 
   `
+  
     let tamanhoFonte = 32;
 
     const botaoAumentar = document.getElementById("aumentar");
@@ -185,5 +184,6 @@ uma função para aumentar o tamanho da fonte e outra para diminuir.
 
   `;
 
-![site com js](https://github.com/7uigi/WebMobile/blob/main/siteJS.png)
+## Site com Funcionalidade do JS
+![site com js](https://github.com/7uigi/WebMobile/blob/main/Fotos%20web/siteJS.png)
 
