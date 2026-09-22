@@ -25,12 +25,15 @@ O header do site engloba o logo e a funcionalidade de alterar o tamanho da fonte
 
  `
         <header>
-            <img src="https://github.com/7uigi/WebMobile/blob/feature/HTML/Fotos%20web/WhatsApp%20Image%202026-08-25%20at%2020.34.00.jpeg"alt="Logo">
-            <h1> Projeto terceira idade </h1>
-            <p> Font</p>
-            <button> + </button>
-            <button> - </button>
-            <p> Aa </p>
+            <div class="brand">
+                <img src="./assets/logo.jpeg"alt="Logo">
+                <h1> Conecta <strong>60+</strong> </h1>
+            </div>
+            <div class="accessibility">
+                <p class="accessibility-label"> Tamanho do texto</p>
+                <button onclick="aumentarFonte()">+</button>
+                <button onclick="diminuirFonte()">-</button>
+            </div>
         </header>
   `;
 
@@ -39,10 +42,17 @@ O header do site engloba o logo e a funcionalidade de alterar o tamanho da fonte
 O Section 1 é referente a introdução do site e uma foto
 
  `
-        <section>
-            <img src="https://github.com/7uigi/WebMobile/blob/feature/HTML/Fotos%20web/WhatsApp%20Image%202026-08-25%20at%2020.34.00.jpeg"alt="Img do Proj">
-            <h1> projeto terceira idade </h1>
-            <p> projeto que visa ajudar a população acima de 60 anos</p>
+        <section class="hero">
+            <div class="hero-copy">
+                <h2>Mais autonomia para o dia a dia.</h2>
+                <p class="texto">
+                    Informações simples e acessíveis para ajudar pessoas com 60 anos ou mais
+                    a encontrarem serviços importantes com mais segurança e praticidade.
+                </p>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/intro.jpeg" alt="Pessoa idosa utilizando tecnologia">
+            </div>
         </section>
  `;
  
@@ -50,10 +60,11 @@ O Section 1 é referente a introdução do site e uma foto
 O Section 2 é referente a 6 ajudas diferentes para o publico alvo usufruir do ambiente digital
 
  `
-    <section>
-            <a href="#">
-                <img src="https://github.com/7uigi/WebMobile/blob/feature/HTML/Fotos%20web/WhatsApp%20Image%202026-08-25%20at%2020.34.00.jpeg"alt="Seguranç">
-                <p> Segurança</p>
+    <section class="cards">
+            <a class="service-card" href="#">
+                <div class="icon"><img src="./assets/policial.jpeg" alt=""></div>
+                <div><h3 class="texto">Segurança</h3><p>Orientações e contatos importantes.</p></div>
+                <p class="arrow">→</p>
             </a>
     </section>
  `;
@@ -63,9 +74,14 @@ Já o Footer são contatos de ajuda para situações de emergência (Polícia, A
 
  `
        <footer>
-            <img src="https://github.com/7uigi/WebMobile/blob/feature/HTML/Fotos%20web/WhatsApp%20Image%202026-08-25%20at%2020.34.00.jpeg" alt="Polícia">
-            <b><h2> Polícia</h2></b>
-            <p> 190</p>
+            <section class="emergency">
+                <div class="emergency-cards">
+                    <a href="#" class="emergency-card">
+                        <img src="./assets/policial.jpeg" alt="">
+                        <div><p>Polícia</p><p>190</p></div>
+                        <b>→</b>
+                    </a>
+                </div>
         </footer>
   `;
 
@@ -78,17 +94,20 @@ O site esta separado em 4 partes sendo elas:
 O header do site engloba o logo e a funcionalidade de alterar o tamanho da fonte do site visando uma maior acessibilidade para o publico alvo
 
  `
-    header{
-        color: black;
-        font-size: larger;
-        margin: 0;
-        padding: 0;
-        background-color: whitesmoke;
-         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+    .topbar {
+        min-height: 88px;
+        padding: 14px clamp(20px, 5vw, 76px);
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
     }
-       
+  
   `;
 
   
@@ -96,35 +115,28 @@ O header do site engloba o logo e a funcionalidade de alterar o tamanho da fonte
 O Section 1 é referente a introdução do site e uma foto
 
  `
-    .introduction{
-        color: black;
-        font-size: larger;
-        margin: 0;
-        padding: 0;
-        background-color: whitesmoke;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+    .hero {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 64px 28px 76px;
+        display: grid;
+        grid-template-columns: 1fr .9fr;
+        gap: 70px;
+        align-items: center;
     }
-
  `;
  
 ## Section 2
 O Section 2 é referente a 6 ajudas diferentes para o publico alvo usufruir do ambiente digital
 
  `
-    .specificContent{
-        color: black;
-        font-size: larger;
-        margin: 0;
-        padding: 0;
-        background-color: whitesmoke;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
+    .cards {
+        max-width: 1240px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
     }
-    
  `;
  
 ## Footer
@@ -132,19 +144,19 @@ Já o Footer são contatos de ajuda para situações de emergência (Polícia, A
 
  `
     footer{
-        color: black;
-        font-size: larger;
-        margin: 0;
-        padding: 0;
-        background-color: limegreen;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+    background: #123e4d;
+    color: #fff;
+    padding: 30px max(28px, 5vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     }
+`;
 
-  `;
+## site com interface do CSS
 
-![Site com CSS](https://github.com/7uigi/WebMobile/blob/main/siteCSS.png)
+![site com CSS](https://github.com/7uigi/WebMobile/blob/main/Fotos%20web/siteCSS.png)
 
 # Tutorial Js
 A funcionalidade do java script adicionada foi a funcionalidade de fontes alteraveis para tornar responsivel o tamanho dos textos para uma maior visibilidade e acessibilidade.
@@ -153,6 +165,7 @@ A funcionalidade do java script adicionada foi a funcionalidade de fontes altera
 uma função para aumentar o tamanho da fonte e outra para diminuir.
 
   `
+  
     let tamanhoFonte = 32;
 
     const botaoAumentar = document.getElementById("aumentar");
@@ -185,5 +198,5 @@ uma função para aumentar o tamanho da fonte e outra para diminuir.
 
   `;
 
-![site com js](https://github.com/7uigi/WebMobile/blob/main/siteJS.png)
-
+## Site com Funcionalidade do JS
+![site com js](https://github.com/7uigi/WebMobile/blob/main/Fotos%20web/siteJS.png)
