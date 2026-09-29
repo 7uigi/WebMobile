@@ -4,6 +4,8 @@
 Gabriel Freitas 10435826
 Gustavo Luigi Chao Pinotti 10419700
 Henrique Akio Uehara 10771465
+# Extensão
+O projeto é extensionista pois seu objetivo é auxiliar a comunidade idosa a usar o celular e acessar serviços como segurança(cair em golpes) e utilizar serviços como o Uber, o que contribui para a inclusão digital deles.
 
 # Processo de Ideação
 foi feito um brainstorm para encontrarmos nossa ideia
