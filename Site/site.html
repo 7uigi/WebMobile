@@ -8,75 +8,90 @@
         <title> Web Mobile</title>
     </head>
     <body>
-        <header>
-            <div>
+        <header class="topbar">
+            <div class="brand">
                 <img src="./assets/logo.jpeg"alt="Logo">
-                <h1> Projeto terceira idade </h1>
+                <h1> Conecta <strong>60+</strong> </h1>
             </div>
-            <div id="headerTrailing">
-                <p> Font</p>
+            <div class="accessibility">
+                <p class="accessibility-label"> Tamanho do texto</p>
                 <button onclick="aumentarFonte()">+</button>
                 <button onclick="diminuirFonte()">-</button>
-                <p> Aa </p>
             </div>
         </header>
-        <br>
-        <section class="introduction">
-            <img src="./assets/intro.jpeg"alt="Img do Proj">
-            <div>
-                <h1 class="texto"> Projeto terceira idade </h1>
-                <p class="texto"> Projeto que visa ajudar a população acima de 60 anos</p>
+
+        <section class="hero">
+            <div class="hero-copy">
+                <h2>Mais autonomia para o dia a dia.</h2>
+                <p class="texto">
+                    Informações simples e acessíveis para ajudar pessoas com 60 anos ou mais
+                    a encontrarem serviços importantes com mais segurança e praticidade.
+                </p>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/intro.jpeg" alt="Pessoa idosa utilizando tecnologia">
             </div>
         </section>
-        <br>
-        <section class="specificContent">
-            <a href="#">
-                <img src="./assets/policial.jpeg"alt="Segurança">
-                <p class="texto"> Segurança</p>
-            </a>
 
-            <a href="#">
-                <img src="./assets/uber.jpeg" alt="Uber">
-                <p class="texto"> Uber</p>
-            </a>  
-
-            <a href="#">  
-                <img src="./assets/hospital.jpeg" alt="Saúde">
-                <p class="texto"> Sáude</p>
+        <section class="cards">
+            <a class="service-card" href="#">
+                <div class="icon"><img src="./assets/policial.jpeg" alt=""></div>
+                <div><h3 class="texto">Segurança</h3><p>Orientações e contatos importantes.</p></div>
+                <p class="arrow">→</p>
             </a>
-
-            <a href="#">
-                <img src="./assets/bombeiros.jpeg" alt="Bombeiros">
-                <p class="texto"> Bombeiros</p>
+            <a class="service-card" href="#">
+                <div class="icon"><img src="./assets/uber.jpeg" alt=""></div>
+                <div><h3 class="texto">Transporte</h3><p>Ajuda para se locomover com tranquilidade.</p></div>
+                <p class="arrow">→</p>
             </a>
-            <a href="#">
-                <img src="./assets/alimento.jpeg" alt="Alimentação">
-                <p class="texto"> Alimentação</p>
+            <a class="service-card" href="#">
+                <div class="icon"><img src="./assets/hospital.jpeg" alt=""></div>
+                    <div><h3 class="texto">Saúde</h3><p>Serviços de saúde e informações úteis.</p></div>
+                <p class="arrow">→</p>
             </a>
-
-            <a href="#">
-                <img src="./assets/estudo.jpeg" alt="Ensino">
-                <p class="texto"> Ensino</p>
+            <a class="service-card" href="#">
+                <div class="icon"><img src="./assets/bombeiros.jpeg" alt=""></div>
+                <div><h3 class="texto">Emergência</h3><p>Encontre rapidamente quem pode ajudar.</p></div>
+                <p class="arrow">→</p>
+            </a>
+            <a class="service-card" href="#">
+                <div class="icon"><img src="./assets/alimento.jpeg" alt=""></div>
+                    <div><h3 class="texto">Alimentação</h3><p>Informações sobre alimentação e apoio.</p></div>
+                <p class="arrow">→</p>
+            </a>
+            <a class="service-card" href="#">
+                <div class="icon"><img src="./assets/estudo.jpeg" alt=""></div>
+                <div><h3 class="texto">Aprendizado</h3><p>Conteúdos para aprender no seu ritmo.</p></div>
+                <p class="arrow">→</p>
             </a>
         </section>
-        <br>
+
         <footer>
-            <section>
-                <img src="./assets/policial.jpeg" alt="Polícia">
-                <b><h2 class="texto"> Polícia</h2></b>
-                <p class="texto"> 190</p>
-            </section>
-
-            <section>
-                <img src="./assets/hospital.jpeg" alt="Ambulância">
-                <b><h2 class="texto"> Ambulância</h2></b>
-                <p class="texto"> 192</p>
-            </section>
-
-            <section>
-                <img src="./assets/bombeiros.jpeg" alt="Bombeiros">
-                <b><h2 class="texto"> Bombeiros</h2></b>
-                <p class="texto"> 193</p>
+            <section class="emergency">
+                <div class="emergency-title">
+                    <p class="alert-icon">!</p>
+                    <div>
+                        <p class="eyebrow">EM CASO DE EMERGÊNCIA</p>
+                        <h2>Contatos importantes</h2>
+                    </div>
+                </div>
+                <div class="emergency-cards">
+                    <a href="#" class="emergency-card">
+                        <img src="./assets/policial.jpeg" alt="">
+                        <div><p>Polícia</p><p>190</p></div>
+                        <b>→</b>
+                    </a>
+                    <a href="#" class="emergency-card">
+                        <img src="./assets/hospital.jpeg" alt="">
+                        <div><p>SAMU</p><p>192</p></div>
+                        <b>→</b>
+                    </a>
+                    <a href="#" class="emergency-card">
+                        <img src="./assets/bombeiros.jpeg" alt="">
+                        <div><p>Bombeiros</p><p>193</p></div>
+                        <b>→</b>
+                    </a>
+                </div>
             </section>
         </footer>
     </body>
