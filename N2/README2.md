@@ -9,4 +9,9 @@ O projeto é extensionista pois seu objetivo é auxiliar a comunidade idosa a us
 
 # Wireframe
 foi feito um wireframe do site que será na segunda etapa do projeto 
-![Brainstorm](https://github.com/7uigi/WebMobile/blob/main/Fotos%20web/WhatsApp%20Image%202026-08-25%20at%2020.34.24.jpeg)
+
+## Home do Wireframe
+![Home do Wireframe]([https://github.com/7uigi/WebMobile/blob/main/Fotos%20web/WhatsApp%20Image%202026-08-25%20at%2020.34.24.jpeg](https://github.com/7uigi/WebMobile/blob/main/N2/FotosN2/Wireframe1.png))
+
+## Alimentação do Wireframe
+![Alimentação do Wireframe]([https://github.com/7uigi/WebMobile/blob/main/Fotos%20web/WhatsApp%20Image%202026-08-25%20at%2020.34.24.jpeg](https://github.com/7uigi/WebMobile/blob/main/N2/FotosN2/Wireframe2.png))
