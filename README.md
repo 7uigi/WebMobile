@@ -4,9 +4,11 @@
 Gabriel Freitas 10435826
 Gustavo Luigi Chao Pinotti 10419700
 Henrique Akio Uehara 10771465
+# Extensão
+O projeto é extensionista pois seu objetivo é auxiliar a comunidade idosa a usar o celular e acessar serviços como segurança(cair em golpes) e utilizar serviços como o Uber, o que contribui para a inclusão digital deles.
 
 # Processo de Ideação
-foi feito um brainstorm para encontrarmos nossa idéia
+foi feito um brainstorm para encontrarmos nossa ideia
 ![Brainstorm](https://github.com/7uigi/WebMobile/blob/main/Fotos%20web/WhatsApp%20Image%202026-08-25%20at%2020.34.24.jpeg)
 
 # Protótipo Web
@@ -24,6 +26,7 @@ O site esta separado em 4 partes sendo elas:
 O header do site engloba o logo e a funcionalidade de alterar o tamanho da fonte do site visando uma maior acessibilidade para o publico alvo
 
  `
+ 
         <header>
             <div class="brand">
                 <img src="./assets/logo.jpeg"alt="Logo">
@@ -35,6 +38,7 @@ O header do site engloba o logo e a funcionalidade de alterar o tamanho da fonte
                 <button onclick="diminuirFonte()">-</button>
             </div>
         </header>
+        
   `;
 
   
@@ -42,6 +46,7 @@ O header do site engloba o logo e a funcionalidade de alterar o tamanho da fonte
 O Section 1 é referente a introdução do site e uma foto
 
  `
+ 
         <section class="hero">
             <div class="hero-copy">
                 <h2>Mais autonomia para o dia a dia.</h2>
@@ -54,12 +59,14 @@ O Section 1 é referente a introdução do site e uma foto
                 <img src="./assets/intro.jpeg" alt="Pessoa idosa utilizando tecnologia">
             </div>
         </section>
+        
  `;
  
 ## Section 2
 O Section 2 é referente a 6 ajudas diferentes para o publico alvo usufruir do ambiente digital
 
  `
+ 
     <section class="cards">
             <a class="service-card" href="#">
                 <div class="icon"><img src="./assets/policial.jpeg" alt=""></div>
@@ -67,12 +74,14 @@ O Section 2 é referente a 6 ajudas diferentes para o publico alvo usufruir do a
                 <p class="arrow">→</p>
             </a>
     </section>
+    
  `;
  
 ## Footer
 Já o Footer são contatos de ajuda para situações de emergência (Polícia, Ambulância e Bombeiros)
 
  `
+ 
        <footer>
             <section class="emergency">
                 <div class="emergency-cards">
@@ -83,6 +92,7 @@ Já o Footer são contatos de ajuda para situações de emergência (Polícia, A
                     </a>
                 </div>
         </footer>
+        
   `;
 
 
@@ -94,6 +104,7 @@ O site esta separado em 4 partes sendo elas:
 O header do site engloba o logo e a funcionalidade de alterar o tamanho da fonte do site visando uma maior acessibilidade para o publico alvo
 
  `
+ 
     .topbar {
         min-height: 88px;
         padding: 14px clamp(20px, 5vw, 76px);
@@ -115,6 +126,7 @@ O header do site engloba o logo e a funcionalidade de alterar o tamanho da fonte
 O Section 1 é referente a introdução do site e uma foto
 
  `
+ 
     .hero {
         max-width: 1240px;
         margin: 0 auto;
@@ -124,12 +136,14 @@ O Section 1 é referente a introdução do site e uma foto
         gap: 70px;
         align-items: center;
     }
+    
  `;
  
 ## Section 2
 O Section 2 é referente a 6 ajudas diferentes para o publico alvo usufruir do ambiente digital
 
  `
+ 
     .cards {
         max-width: 1240px;
         margin: auto;
@@ -137,12 +151,14 @@ O Section 2 é referente a 6 ajudas diferentes para o publico alvo usufruir do a
         grid-template-columns: repeat(3, 1fr);
         gap: 18px;
     }
+    
  `;
  
 ## Footer
 Já o Footer são contatos de ajuda para situações de emergência (Polícia, Ambulância e Bombeiros)
 
  `
+ 
     footer{
     background: #123e4d;
     color: #fff;
@@ -152,6 +168,7 @@ Já o Footer são contatos de ajuda para situações de emergência (Polícia, A
     align-items: center;
     gap: 20px;
     }
+    
 `;
 
 ## site com interface do CSS
