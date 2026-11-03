@@ -1,0 +1,97 @@
+
+.topbar {
+  min-height: 88px;
+  padding: 14px clamp(20px, 5vw, 76px);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.brand img {
+  width: 62px;
+  height: 62px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -.5px;
+}
+
+.brand h1 strong {
+  color: var(--primary);
+}
+
+.accessibility {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.accessibility-label {
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.accessibility button {
+  width: 46px;
+  height: 42px;
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--primary-dark);
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.accessibility button:hover,
+.accessibility button:focus {
+  background: var(--primary);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* Responsividade */
+
+@media (max-width: 620px) {
+  .topbar {
+    padding: 11px 16px;
+  }
+
+  .brand img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .brand h1 {
+    font-size: 23px;
+  }
+
+  .accessibility-label {
+    display: none;
+  }
+
+  .accessibility button {
+    width: 42px;
+    height: 40px;
+  }
+}

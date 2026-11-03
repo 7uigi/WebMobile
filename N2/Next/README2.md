@@ -18,3 +18,8 @@ foi feito um wireframe do site que será na segunda etapa do projeto
 
 ## Exportação do projeto
 O projeto foi exportado de um HTML, JavaScript e um CSS para dentro do Novo Projeto NextJS
+
+## Componentização
+A home page do projeto foi componentizada dentro do projeto de NextJS e esta é a estrutura de pastas e arquivos:
+
+![Estrutura de pastas da Home](https://github.com/7uigi/WebMobile/blob/main/N2/FotosN2/componentizacao.png)
