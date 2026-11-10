@@ -23,3 +23,8 @@ O projeto foi exportado de um HTML, JavaScript e um CSS para dentro do Novo Proj
 A home page do projeto foi componentizada dentro do projeto de NextJS e esta é a estrutura de pastas e arquivos:
 
 ![Estrutura de pastas da Home](https://github.com/7uigi/WebMobile/blob/main/N2/FotosN2/componentizacao.png)
+
+### Página dinámica
+Aqui foi feita a pagina e a navegação dinamica para os 6 casos segurança, transporte...
+
+![Página dinamica de Segurança](https://github.com/7uigi/WebMobile/blob/main/N2/FotosN2/paginaDinamica.png)
