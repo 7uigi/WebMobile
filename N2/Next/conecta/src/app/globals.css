@@ -42,3 +42,9 @@ a:focus-visible {
   outline: 3px solid var(--secondary);
   outline-offset: 4px;
 }
+
+.description-page {
+  min-height: 100vh;
+  background: var(--bg);
+}
+

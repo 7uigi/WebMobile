@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function ServiceCard({
   imagem,
@@ -7,7 +8,7 @@ export default function ServiceCard({
   link = "#",
 }) {
   return (
-    <a className="service-card" href={link}>
+    <Link className="service-card" href={link}>
       <div className="icon">
         <img src={imagem} alt="" />
       </div>
@@ -21,6 +22,6 @@ export default function ServiceCard({
       </div>
 
       <p className="arrow">→</p>
-    </a>
+    </Link>
   );
 }
