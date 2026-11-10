@@ -1,0 +1,34 @@
+
+.content-card {
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.content-card-icon {
+  margin-bottom: 12px;
+  font-size: 30px;
+}
+
+.content-card h3 {
+  margin: 0 0 10px;
+  color: var(--primary-dark);
+  font-size: 20px;
+}
+
+.content-card p {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+
+.content-card a {
+  color: var(--primary);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content-card a:hover {
+  text-decoration: underline;
+}
