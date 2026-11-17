@@ -28,3 +28,39 @@ A home page do projeto foi componentizada dentro do projeto de NextJS e esta é 
 Aqui foi feita a pagina e a navegação dinamica para os 6 casos segurança, transporte...
 
 ![Página dinamica de Segurança](https://github.com/7uigi/WebMobile/blob/main/N2/FotosN2/paginaDinamica.png)
+
+## Requisição api
+Em seguida o JSON utilizado no projeto
+
+´
+  {
+    "id": "1",
+    "name": "Segurança",
+    "description": "Aqui você irá encontrar ajuda em relação ao tema Segurança",
+    "icon": "🛡️",
+    "contents": [
+      {
+        "id": "seg-1",
+        "title": "Polícia Militar",
+        "description": "Atendimento de emergência.",
+        "icon": "👮",
+        "link": ""
+      },
+      {
+        "id": "seg-2",
+        "title": "Polícia Civil",
+        "description": "Registro de ocorrências.",
+        "icon": "🚔",
+        "link": ""
+      },
+      {
+        "id": "seg-3",
+        "title": "Bombeiros",
+        "description": "Emergência - 193",
+        "icon": "🚒",
+        "link": ""
+      }
+    ]
+  },
+
+´

@@ -1,7 +1,7 @@
 
 import "./CategoryHeader.css";
 
-export default function CategoryHeader({ category }) {
+export default function CategoryHeader({ category, estiloTexto }) {
   return (
     <section className="category-header">
       <div className="category-icon">
@@ -9,7 +9,7 @@ export default function CategoryHeader({ category }) {
       </div>
 
       <div>
-        <h1>{category.name}</h1>
+        <h1 style={estiloTexto}>{category.name} </h1>
         <p>{category.description}</p>
       </div>
     </section>

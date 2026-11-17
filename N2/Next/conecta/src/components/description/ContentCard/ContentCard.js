@@ -1,7 +1,7 @@
 
 import "./ContentCard.css";
 
-export default function ContentCard({ content }) {
+export default function ContentCard({ content, estiloTexto}) {
   return (
     <article className="content-card">
       {content.icon && (
@@ -10,7 +10,7 @@ export default function ContentCard({ content }) {
         </div>
       )}
 
-      <h3>{content.title}</h3>
+      <h3 style={estiloTexto}>{content.title}</h3>
 
       {content.description && (
         <p>{content.description}</p>
