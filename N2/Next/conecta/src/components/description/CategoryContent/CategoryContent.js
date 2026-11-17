@@ -2,12 +2,12 @@
 import ContentCard from "../ContentCard/ContentCard";
 import "./CategoryContent.css";
 
-export default function CategoryContent({ category }) {
+export default function CategoryContent({ category, estiloTexto }) {
   if (!category.contents || category.contents.length === 0) {
     return (
       <section className="category-content">
         <div className="empty-content">
-          <h2>Conteúdo em breve</h2>
+          <h2 style={estiloTexto}>Conteúdo em breve</h2>
           <p>
             Estamos preparando informações para esta categoria.
           </p>
@@ -23,6 +23,7 @@ export default function CategoryContent({ category }) {
           <ContentCard
             key={content.id}
             content={content}
+            estiloTexto={estiloTexto}
           />
         ))}
       </div>
