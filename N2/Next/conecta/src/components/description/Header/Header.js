@@ -41,20 +41,10 @@ export default function Header({ aumentarFonte, diminuirFonte }) {
         <p className="accessibility-label">
           Tamanho do texto
         </p>
+        
+        <button onClick={aumentarFonte} aria-label="Aumentar fonte"> + </button>
 
-        <button
-          onClick={aumentarFonte}
-          aria-label="Aumentar fonte"
-        >
-          +
-        </button>
-
-        <button
-          onClick={diminuirFonte}
-          aria-label="Diminuir fonte"
-        >
-          -
-        </button>
+        <button onClick={diminuirFonte} aria-label="Diminuir fonte"> - </button>
       </div>
 
     </header>
