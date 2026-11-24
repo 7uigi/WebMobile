@@ -13,25 +13,26 @@ export default function Home() {
 
   const aumentarFonte = () => {
     setTamanhoFonte((prev) =>
-      prev < 60 ? prev + 2 : prev
+      prev < 44 ? prev + 2 : prev
     );
   };
 
   const diminuirFonte = () => {
     setTamanhoFonte((prev) =>
-      prev > 20 ? prev - 2 : prev
+      prev > 24 ? prev - 2 : prev
     );
   };
 
   const estiloTexto = {
     fontSize: `${tamanhoFonte}px`,
   };
-
+  
   return (
     <>
       <Header
         aumentarFonte={aumentarFonte}
         diminuirFonte={diminuirFonte}
+        estiloTexto={estiloTexto}
       />
 
       <main>
@@ -40,7 +41,7 @@ export default function Home() {
         <Services estiloTexto={estiloTexto} />
       </main>
 
-      <Emergency />
+      <Emergency estiloTexto={estiloTexto} />
     </>
   );
 }

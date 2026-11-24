@@ -21,17 +21,16 @@
   background: var(--danger-bg);
   color: #d66b22;
   font-weight: 900;
-  font-size: 25px;
   flex-shrink: 0;
 }
 
 .emergency-title h2 {
   margin: 0;
-  font-size: 30px;
 }
 
 .emergency-title .eyebrow {
-  font-size: 12px;
+  margin: 3px 0 0;
+  opacity: .75;
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -73,18 +72,14 @@
 .emergency-card p {
   margin: 0;
   color: var(--primary);
-  font-size: 24px;
   font-weight: 900;
 }
 
 .emergency-card b {
   color: var(--primary);
-  font-size: 22px;
 }
 
-/* Rodapé */
-
-footer {
+.footer-style {
   background: #123e4d;
   color: #fff;
   padding: 30px max(28px, 5vw);
@@ -93,14 +88,6 @@ footer {
   align-items: center;
   gap: 20px;
 }
-
-footer p {
-  margin: 3px 0 0;
-  opacity: .75;
-  font-size: 14px;
-}
-
-/* Responsividade */
 
 @media (max-width: 900px) {
   .emergency-cards {
@@ -113,7 +100,7 @@ footer p {
     padding: 48px 20px 55px;
   }
 
-  footer {
+  .footer-style {
     display: block;
     padding: 27px 20px;
   }

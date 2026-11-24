@@ -1,4 +1,4 @@
-
+import styles from "./Emergency.module.css";
 const contatos = [
   {
     id: 1,
@@ -20,31 +20,31 @@ const contatos = [
   },
 ];
 
-export default function Emergency() {
+export default function Emergency( {estiloTexto} ) {
   return (
-    <footer>
-      <section className="emergency">
-        <div className="emergency-title">
-          <p className="alert-icon">!</p>
+    <footer className={styles["footer-style"]}>
+      <section className={styles["emergency"]}>
+        <div className={styles["emergency-title"]}>
+          <p className={styles["alert-icon"]}>!</p>
 
           <div>
-            <p className="eyebrow">EM CASO DE EMERGÊNCIA</p>
-            <h2>Contatos importantes</h2>
+            <p className={["eyebrow"]} style={estiloTexto}>EM CASO DE EMERGÊNCIA</p>
+            <h2 style={estiloTexto}>Contatos importantes</h2>
           </div>
         </div>
 
-        <div className="emergency-cards">
+        <div className={styles["emergency-cards"]}>
           {contatos.map((contato) => (
             <a
-              href={`tel:${contato.telefone}`}
-              className="emergency-card"
+              href={`#`}
+              className={styles["emergency-card"]}
               key={contato.id}
             >
               <img src={contato.imagem} alt="" />
 
               <div>
-                <p>{contato.nome}</p>
-                <p>{contato.telefone}</p>
+                <p style={estiloTexto}>{contato.nome}</p>
+                <p style={estiloTexto}>{contato.telefone}</p>
               </div>
 
               <b>→</b>

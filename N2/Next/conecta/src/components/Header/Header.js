@@ -1,12 +1,14 @@
-export default function Header({ aumentarFonte, diminuirFonte }) {
+import styles from "./Header.module.css";
+export default function Header({ aumentarFonte, diminuirFonte, estiloTexto }) {
   return (
-    <header className="topbar">
-      <div className="brand">
+    <header className={styles["topbar"]}>
+      <div className={styles["brand"]}>
         <img src="/assets/logo.jpeg" alt="Logo" />
         <h1>Conecta <strong>60+</strong></h1>
       </div>
-      <div className="accessibility">
-        <p className="accessibility-label">Tamanho do texto</p>
+      
+      <div className={styles["accessibility"]}>
+        <p className={styles["accessibility-label"]} style={estiloTexto}>Tamanho do texto</p>
 
         <button onClick={aumentarFonte} aria-label="Aumentar fonte"> + </button>
 
