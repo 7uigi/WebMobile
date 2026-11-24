@@ -1,5 +1,5 @@
 import ServiceCard from "./ServiceCard";
-
+import styles from "./Services.module.css";
 const servicos = [
   {
     id: 1,
@@ -47,16 +47,12 @@ const servicos = [
 
 export default function Services({ estiloTexto }) {
   return (
-    <section className="services">
-      <div className="section-heading">
-        <h2>Serviços disponíveis</h2>
-        <p>
-          Encontre informações e serviços importantes para facilitar seu dia
-          a dia.
-        </p>
+    <section className={styles["services"]}>
+      <div className={styles["section-heading"]}>
+        <h2 style={estiloTexto}>Serviços disponíveis</h2>
       </div>
 
-      <div className="cards">
+      <div className={styles["cards"]}>
         {servicos.map((servico) => (
           <ServiceCard
             key={servico.id}

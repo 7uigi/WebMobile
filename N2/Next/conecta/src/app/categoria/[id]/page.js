@@ -61,13 +61,13 @@ export default function CategoryPage({ params }) {
 
   const aumentarFonte = () => {
     setTamanhoFonte((prev) =>
-      prev < 60 ? prev + 2 : prev
+      prev < 44 ? prev + 2 : prev
     );
   };
 
   const diminuirFonte = () => {
     setTamanhoFonte((prev) =>
-      prev > 20 ? prev - 2 : prev
+      prev > 24 ? prev - 2 : prev
     );
   };
 
@@ -95,13 +95,14 @@ export default function CategoryPage({ params }) {
       <Header
         aumentarFonte={aumentarFonte}
         diminuirFonte={diminuirFonte}
+        estiloTexto={estiloTexto}
       />
 
       <CategoryHeader category={category} estiloTexto={estiloTexto} />
 
       <CategoryContent category={category} estiloTexto={estiloTexto} />
 
-      <Emergency />
+      <Emergency estiloTexto={estiloTexto}/>
     </main>
   );
 }
