@@ -1,44 +1,27 @@
 
 "use client";
-
+import styles from "./Header.module.css";
 import Link from "next/link";
 
-export default function Header({ aumentarFonte, diminuirFonte }) {
+export default function Header({ aumentarFonte, diminuirFonte, estiloTexto }) {
   return (
-    <header className="topbar">
+    <header className={styles["topbar"]}>
 
-      {/* Logo e nome */}
-      <div className="brand">
+      <div className={styles["brand"]}>
         <img src="/assets/logo.jpeg" alt="Logo" />
         <h1>
           Conecta <strong>60+</strong>
         </h1>
       </div>
 
-      {/* Botão Home centralizado */}
-      <div className="home-container">
-        <Link href="/" className="home-button" aria-label="Página inicial">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="m3 10 9-7 9 7" />
-            <path d="M5 9v12h14V9" />
-            <path d="M9 21v-8h6v8" />
-          </svg>
+      <nav className={styles["home-container"]}>
+        <Link href="/" className="home-button" aria-label="Página inicial" style={estiloTexto}>
+          🏠
         </Link>
-      </div>
+      </nav>
 
-      {/* Acessibilidade */}
-      <div className="accessibility">
-        <p className="accessibility-label">
+      <div className={styles["accessibility"]}>
+        <p className={styles["accessibility-label"]} style={estiloTexto}>
           Tamanho do texto
         </p>
         

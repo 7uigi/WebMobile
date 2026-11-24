@@ -1,11 +1,11 @@
 
-import "./ContentCard.css";
+import styles from "./ContentCard.module.css";
 
 export default function ContentCard({ content, estiloTexto}) {
   return (
-    <article className="content-card">
+    <article className={styles["content-card"]}>
       {content.icon && (
-        <div className="content-card-icon">
+        <div className={styles["content-card-icon"]} style={estiloTexto}>
           {content.icon}
         </div>
       )}
@@ -13,7 +13,7 @@ export default function ContentCard({ content, estiloTexto}) {
       <h3 style={estiloTexto}>{content.title}</h3>
 
       {content.description && (
-        <p>{content.description}</p>
+        <p style={estiloTexto}>{content.description}</p>
       )}
 
       {content.link && (
