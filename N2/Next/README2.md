@@ -4,6 +4,7 @@
 Gabriel Freitas 10435826
 Gustavo Luigi Chao Pinotti 10419700
 Henrique Akio Uehara 10771465
+
 # Extensão
 O projeto é extensionista pois seu objetivo é auxiliar a comunidade idosa a usar o celular e acessar serviços como segurança(cair em golpes) e utilizar serviços como o Uber, o que contribui para a inclusão digital deles.
 
@@ -24,15 +25,119 @@ A home page do projeto foi componentizada dentro do projeto de NextJS e esta é 
 
 ![Estrutura de pastas da Home](https://github.com/7uigi/WebMobile/blob/main/N2/FotosN2/componentizacao.png)
 
-### Página dinámica
-Aqui foi feita a pagina e a navegação dinamica para os 6 casos segurança, transporte...
+### Navegação Simples
+Aqui foi feita a pagina e a navegação simples para os 6 casos segurança, transporte...
 
-![Página dinamica de Segurança](https://github.com/7uigi/WebMobile/blob/main/N2/FotosN2/paginaDinamica.png)
+´
+
+    <Link href="/" className="home-button" aria-label="Página inicial" style={estiloTexto}>
+      🏠
+    </Link>
+
+´
+
+### Navegação dinâmica
+Aqui foi feita a pagina e a navegação dinâmica para os 6 casos segurança, transporte...
+
+´
+
+    <div className={styles["cards"]}>
+      {servicos.map((servico) => (
+        <ServiceCard
+          key={servico.id}
+          {...servico}
+          estiloTexto={estiloTexto}
+        />
+      ))}
+    </div>
+
+´
+
+## UseState
+Funcionalidade para tamanhos de fontes dinâmicas dentro do site utilizando o UseState
+
+´
+
+    const [tamanhoFonte, setTamanhoFonte] = useState(32);
+
+    const aumentarFonte = () => {
+      setTamanhoFonte((prev) =>
+        prev < 44 ? prev + 2 : prev
+      );
+    };
+
+    const diminuirFonte = () => {
+      setTamanhoFonte((prev) =>
+        prev > 24 ? prev - 2 : prev
+      );
+    };
+
+    const estiloTexto = {
+      fontSize: `${tamanhoFonte}px`,
+    };
+
+´
+
+## UseEffect
+Requisição da Api feita com UseEffect
+
+´
+
+    const [id, setId] = useState(null);
+    const [category, setCategory] = useState(null);
+    const [carregando, setCarregando] = useState(true);
+    const [erro, setErro] = useState(false);
+
+    useEffect(() => {
+      async function carregarCategoria() {
+      t ry {
+          const resolvedParams = await params;
+          setId(resolvedParams.id);
+        } catch (error) {
+          setErro(true);
+          setCarregando(false);
+        }
+      }
+
+      carregarCategoria();
+    }, [params]);
+
+    useEffect(() => {
+      if (!id) return;
+
+      async function buscarCategoria() {
+        try {
+          const response = await fetch("/api/categories");
+
+          if (!response.ok) {
+            throw new Error("Erro ao buscar categorias");
+          }
+
+          const categories = await response.json();
+
+          const encontrada = categories.find(
+            (item) => item.id === id
+          );
+
+          setCategory(encontrada || null);
+        } catch (error) {
+          console.error(error);
+          setErro(true);
+        } finally {
+          setCarregando(false);
+        }
+      }
+
+      buscarCategoria();
+    }, [id]);
+
+´
 
 ## Requisição api
 Em seguida o JSON utilizado no projeto
 
 ´
+
   {
     "id": "1",
     "name": "Segurança",

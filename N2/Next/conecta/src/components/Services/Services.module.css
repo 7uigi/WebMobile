@@ -15,7 +15,6 @@
 
 .section-heading h2 {
   margin: 0;
-  font-size: 34px;
   letter-spacing: -.8px;
 }
 
@@ -23,7 +22,6 @@
   max-width: 400px;
   color: var(--muted);
   margin: 0;
-  font-size: 17px;
 }
 
 .cards {
@@ -63,23 +61,18 @@
 
 .service-card h3 {
   margin: 0 0 4px;
-  font-size: 22px;
 }
 
 .service-card p {
   margin: 0;
   color: var(--muted);
-  font-size: 14px;
   line-height: 1.35;
 }
 
 .service-card .arrow {
   color: var(--primary);
-  font-size: 25px;
   font-weight: 800;
 }
-
-/* Responsividade */
 
 @media (max-width: 900px) {
   .cards {
@@ -97,7 +90,6 @@
   }
 
   .section-heading h2 {
-    font-size: 29px;
     margin-top: 3px;
   }
 

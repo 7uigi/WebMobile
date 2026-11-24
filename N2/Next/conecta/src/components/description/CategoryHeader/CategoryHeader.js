@@ -1,16 +1,16 @@
 
-import "./CategoryHeader.css";
+import styles from "./CategoryHeader.module.css";
 
 export default function CategoryHeader({ category, estiloTexto }) {
   return (
-    <section className="category-header">
-      <div className="category-icon">
+    <section className={styles["category-header"]}>
+      <div className={styles["category-icon"]} style={estiloTexto}>
         {category.icon}
       </div>
 
       <div>
         <h1 style={estiloTexto}>{category.name} </h1>
-        <p>{category.description}</p>
+        <p style={estiloTexto}>{category.description}</p>
       </div>
     </section>
   );
